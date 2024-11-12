@@ -3,6 +3,8 @@ public class Vehiculo {
     private String modelo;
     private int aniofabricacion=0;
 
+    public Vehiculo(){}
+
     public Vehiculo(String marca) {
         this.marca = marca;
     }
@@ -40,5 +42,9 @@ public class Vehiculo {
 
     public void setAniofabricacion(int aniofabricacion) {
         this.aniofabricacion = aniofabricacion;
+    }
+
+    public String mostrarMensaje (){
+        return "El vehiculo de la marca "+ marca +" con el modelo "+ modelo + " se fabricó en "+ aniofabricacion;
     }
 }
